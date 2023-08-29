@@ -6,7 +6,7 @@ header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 // Conecta a la base de datos  con usuario, contraseña y nombre de la BD
-$servidor = "localhost"; $usuario = "root"; $contrasenia = ""; $nombreBaseDatos = "angular";
+$servidor = "sql104.infinityfree.com"; $usuario = "epiz_34294566"; $contrasenia = "grgDvRZ8WET3XUA"; $nombreBaseDatos = "epiz_34294566_db_angular";
 $conexionBD = new mysqli($servidor, $usuario, $contrasenia, $nombreBaseDatos);
 
 
