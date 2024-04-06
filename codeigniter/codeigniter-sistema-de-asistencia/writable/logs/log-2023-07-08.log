@@ -1,0 +1,387 @@
+CRITICAL - 2023-07-08 00:19:31 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 60.
+ 1 APPPATH\Views\template\header.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(80): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 00:24:58 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 60.
+ 1 APPPATH\Views\template\header.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(80): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 00:25:03 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 60.
+ 1 APPPATH\Views\template\header.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(80): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 00:29:14 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 60.
+ 1 APPPATH\Views\template\header.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(73): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 00:30:41 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 60.
+ 1 APPPATH\Views\template\header.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(76): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 00:41:27 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 60.
+ 1 APPPATH\Views\template\header.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(104): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->crearAlumno()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 00:49:34 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 60.
+ 1 APPPATH\Views\template\header.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(188): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('5')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 01:00:55 --> Invalid file: "oficina/alumnos/listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('oficina/alumnos/listar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/alumnos/listar', [], true)
+ 3 APPPATH\Controllers\AlumnoController.php(79): view('oficina/alumnos/listar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 03:27:16 --> Class "App\Controllers\AulaModel" not found
+in APPPATH\Controllers\AulaController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AulaController->listarAulas()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AulaController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 03:31:34 --> Invalid file: "oficina/aulas/listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('oficina/aulas/listar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/aulas/listar', [], true)
+ 3 APPPATH\Controllers\AulaController.php(45): view('oficina/aulas/listar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AulaController->listarAulas()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AulaController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 03:33:53 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 60.
+ 1 APPPATH\Views\template\header.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 60)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AulaController.php(71): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AulaController->crearAula()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AulaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 03:52:20 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 61.
+ 1 APPPATH\Views\template\header.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\CursoController.php(44): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->listarCursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 03:58:02 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 61.
+ 1 APPPATH\Views\template\header.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\CursoController.php(44): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->listarCursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 15:49:52 --> Attempt to read property "username" on null
+in APPPATH\Views\dashboard.php on line 3.
+ 1 APPPATH\Views\dashboard.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\dashboard.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(39): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 16:34:12 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 70.
+ 1 APPPATH\Views\template\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Home.php(25): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 16:34:14 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 61.
+ 1 APPPATH\Views\template\header.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(278): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->cursosActuales()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 16:34:56 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 61.
+ 1 APPPATH\Views\template\header.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(278): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->cursosActuales()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 16:34:57 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 61.
+ 1 APPPATH\Views\template\header.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(278): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->cursosActuales()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 16:35:02 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 61.
+ 1 APPPATH\Views\template\header.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(278): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->cursosActuales()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 18:46:57 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 70.
+ 1 APPPATH\Views\template\header.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Home.php(25): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-08 20:33:13 --> mysqli_sql_exception: Table 'prueba.docente' doesn't exist in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(73): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-08 20:33:13 --> Table 'prueba.docente' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `docente`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `docente`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `docente`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `docente`
+ORDER BY `id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(73): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:44:03 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(77): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:44:04 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(77): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:44:05 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(77): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:45:26 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(81): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:46:05 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(51): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:51:09 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(51): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:51:13 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(51): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:52:04 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(51): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:52:05 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(51): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:52:16 --> Invalid file: "mantenimiento/docentes/listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mantenimiento/docentes/listar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 3 APPPATH\Controllers\DocenteController.php(52): view('mantenimiento/docentes/listar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:53:04 --> Undefined variable $alumnos
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 35.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alumnos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(52): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 20:59:36 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(82): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-08 21:29:06 --> Undefined variable $docentes
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 36.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docentes', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(52): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

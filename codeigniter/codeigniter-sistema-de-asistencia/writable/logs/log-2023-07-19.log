@@ -1,0 +1,472 @@
+CRITICAL - 2023-07-19 00:19:14 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 12.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(228): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 01:26:51 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 12.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(233): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 01:29:27 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 12.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(233): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 01:34:06 --> Undefined array key "docente"
+in APPPATH\Controllers\AlumnoController.php on line 237.
+ 1 APPPATH\Controllers\AlumnoController.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "docente"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\AlumnoController.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 02:55:56 --> Undefined array key "docente"
+in APPPATH\Controllers\AlumnoController.php on line 237.
+ 1 APPPATH\Controllers\AlumnoController.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "docente"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\AlumnoController.php', 237)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 02:56:30 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 12.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(275): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-19 04:27:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`alumno`, CONSTRAINT `FK_ALUMNO_USUARIO` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(289): CodeIgniter\Model->update('11', Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->actualizarAlumno()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-19 04:27:52 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`alumno`, CONSTRAINT `FK_ALUMNO_USUARIO` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `alumno` SET `usuario_id` = NULL, `aula_id` = \'2\'
+WHERE `alumno`.`id` IN (\'11\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `alumno` SET `usuario_id` = NULL, `aula_id` = \'2\'
+WHERE `alumno`.`id` IN (\'11\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `alumno` SET `usuario_id` = NULL, `aula_id` = \'2\'
+WHERE `alumno`.`id` IN (\'11\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `alumno` SET `usuario_id` = :usuario_id:, `aula_id` = :aula_id:
+WHERE `alumno`.`id` IN :alumno.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AlumnoController.php(289): CodeIgniter\Model->update('11', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->actualizarAlumno()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 06:16:17 --> Undefined variable $usuario
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 9.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(275): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('11')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 06:16:31 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 9.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(275): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('11')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 06:27:54 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 9.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(275): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 06:56:22 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AlumnoController.php(289): CodeIgniter\Model->update('12', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->actualizarAlumno()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 07:00:03 --> Undefined variable $usuario
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 26.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(275): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 07:00:36 --> Attempt to read property "Fernando" on array
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 26.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Fernando" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(275): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 07:00:45 --> Undefined variable $userModel
+in APPPATH\Views\mantenimiento\alumnos\editar.php on line 26.
+ 1 APPPATH\Views\mantenimiento\alumnos\editar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/alumnos/editar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(275): view('mantenimiento/alumnos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->editarAlumno('12')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 07:01:25 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AlumnoController.php(289): CodeIgniter\Model->update('12', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->actualizarAlumno()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 07:15:48 --> Attempt to read property "id" on null
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 APPPATH\Controllers\LoginController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\LoginController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 07:16:22 --> Attempt to read property "id" on null
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 APPPATH\Controllers\LoginController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\LoginController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 07:17:15 --> Attempt to read property "id" on null
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 APPPATH\Controllers\LoginController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\LoginController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 17:47:58 --> Attempt to read property "id" on null
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 APPPATH\Controllers\LoginController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\LoginController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 18:53:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 227.
+ 1 APPPATH\Controllers\DocenteController.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 19:22:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 227.
+ 1 APPPATH\Controllers\DocenteController.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:32:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 227.
+ 1 APPPATH\Controllers\DocenteController.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:34:47 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 227.
+ 1 APPPATH\Controllers\DocenteController.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:36:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 227.
+ 1 APPPATH\Controllers\DocenteController.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:42:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 227.
+ 1 APPPATH\Controllers\DocenteController.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:44:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 227.
+ 1 APPPATH\Controllers\DocenteController.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 227)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:45:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 225.
+ 1 APPPATH\Controllers\DocenteController.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:45:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 225.
+ 1 APPPATH\Controllers\DocenteController.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:45:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 225.
+ 1 APPPATH\Controllers\DocenteController.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:46:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 225.
+ 1 APPPATH\Controllers\DocenteController.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:46:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 225.
+ 1 APPPATH\Controllers\DocenteController.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:47:35 --> Undefined variable $usuario
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:56:14 --> Undefined variable $usuario
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:57:17 --> Undefined variable $userModel
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:57:40 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:57:55 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:58:08 --> Undefined array key "id"
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:58:20 --> Undefined variable $usuario
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:58:32 --> Undefined array key "usuario_id"
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario_id"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 22:58:39 --> Undefined array key "id"
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:00:22 --> Undefined array key "id"
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:00:56 --> Undefined variable $usuario
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:17:04 --> Call to undefined method App\Models\DocenteModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\DocenteController.php(212): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:17:22 --> Call to undefined method App\Models\DocenteModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\DocenteController.php(212): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:17:24 --> Call to undefined method App\Models\DocenteModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\DocenteController.php(212): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:18:45 --> Call to undefined method App\Models\DocenteModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\DocenteController.php(212): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:18:47 --> Call to undefined method App\Models\DocenteModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\DocenteController.php(212): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:30:21 --> Call to undefined method App\Models\DocenteModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\DocenteController.php(212): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:31:00 --> Undefined variable $docenteData
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 9.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docenteData', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-19 23:31:17 --> Undefined variable $docenteData
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 9.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docenteData', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(265): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

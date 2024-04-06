@@ -1,0 +1,585 @@
+CRITICAL - 2023-07-12 00:20:32 --> Undefined variable $apellidopaterno
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 24.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $apellidopaterno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(251): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 03:52:55 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\CursoController.php(99): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\CursoController->guardarCurso()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-12 03:52:55 --> Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`, `imagen`) VALUES (\'R. Verbal\', \'Curso de letras\', \'Comunicacion\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`, `imagen`) VALUES (\'R. Verbal\', \'Curso de letras\', \'Comunicacion\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`, `imagen`) VALUES (\'R. Verbal\', \'Curso de letras\', \'Comunicacion\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`, `imagen`) VALUES (:nombre:, :descripcion:, :categoria:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CursoController.php(99): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->guardarCurso()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 03:57:14 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\CursoController.php(99): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\CursoController->guardarCurso()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-12 03:57:14 --> Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`, `imagen`) VALUES (\'R. Verbal\', \'Curso de letras\', \'Comunicacion\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`, `imagen`) VALUES (\'R. Verbal\', \'Curso de letras\', \'Comunicacion\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`, `imagen`) VALUES (\'R. Verbal\', \'Curso de letras\', \'Comunicacion\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`, `imagen`) VALUES (:nombre:, :descripcion:, :categoria:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CursoController.php(99): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->guardarCurso()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 05:06:28 --> Attempt to read property "username" on null
+in APPPATH\Views\dashboard.php on line 3.
+ 1 APPPATH\Views\dashboard.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\dashboard.php', 3)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(39): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 20:33:56 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 71.
+ 1 APPPATH\Views\template\header.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(151): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('20')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 20:35:32 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 71.
+ 1 APPPATH\Views\template\header.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(99): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 20:35:34 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 71.
+ 1 APPPATH\Views\template\header.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(151): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 20:37:33 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 80.
+ 1 APPPATH\Views\template\header.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 80)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(101): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 21:01:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`END` ASC' at line 3 in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 21:01:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`END` ASC' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuario`
+ORDER BY `CASE WHEN rol = "Admin" THEN 1 WHEN rol = "Oficina" THEN 2 WHEN rol = "Docente" THEN 3 ELSE 4` `END` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+ORDER BY `CASE WHEN rol = "Admin" THEN 1 WHEN rol = "Oficina" THEN 2 WHEN rol = "Docente" THEN 3 ELSE 4` `END` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+ORDER BY `CASE WHEN rol = "Admin" THEN 1 WHEN rol = "Oficina" THEN 2 WHEN rol = "Docente" THEN 3 ELSE 4` `END` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+ORDER BY `CASE WHEN rol = "Admin" THEN 1 WHEN rol = "Oficina" THEN 2 WHEN rol = "Docente" THEN 3 ELSE 4` `END` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 21:02:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3 in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 21:02:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 21:02:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3 in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 21:02:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 21:02:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3 in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 21:02:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 21:02:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3 in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 21:02:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-12 21:02:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3 in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-12 21:02:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+ORDER BY FIELD(rol ASC, "Admin" ASC, "Oficina" ASC, "Docente" ASC, "Alumno") ASC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UsuarioController.php(75): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:24:07 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\usuarios\crear.php on line 100.
+ 1 APPPATH\Views\mantenimiento\usuarios\crear.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/crear', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(119): view('mantenimiento/usuarios/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:25:17 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\usuarios\crear.php on line 100.
+ 1 APPPATH\Views\mantenimiento\usuarios\crear.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/crear', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(119): view('mantenimiento/usuarios/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:32:29 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\usuarios\crear.php on line 100.
+ 1 APPPATH\Views\mantenimiento\usuarios\crear.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/crear', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(119): view('mantenimiento/usuarios/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:34:27 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\usuarios\crear.php on line 100.
+ 1 APPPATH\Views\mantenimiento\usuarios\crear.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/crear', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(119): view('mantenimiento/usuarios/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:34:28 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\usuarios\crear.php on line 100.
+ 1 APPPATH\Views\mantenimiento\usuarios\crear.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/crear', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(119): view('mantenimiento/usuarios/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:34:52 --> Undefined property: stdClass::$usuario_id
+in APPPATH\Views\mantenimiento\usuarios\listar.php on line 29.
+ 1 APPPATH\Views\mantenimiento\usuarios\listar.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$usuario_id', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/listar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(78): view('mantenimiento/usuarios/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:35:18 --> Undefined property: stdClass::$aula_id
+in APPPATH\Views\mantenimiento\usuarios\listar.php on line 35.
+ 1 APPPATH\Views\mantenimiento\usuarios\listar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$aula_id', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/listar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(78): view('mantenimiento/usuarios/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:50:32 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\usuarios\crear.php on line 100.
+ 1 APPPATH\Views\mantenimiento\usuarios\crear.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/crear', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(119): view('mantenimiento/usuarios/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:50:35 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 7.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('16')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:50:40 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\usuarios\crear.php on line 100.
+ 1 APPPATH\Views\mantenimiento\usuarios\crear.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/crear', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(119): view('mantenimiento/usuarios/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:50:57 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 7.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('16')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 21:57:05 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\usuarios\crear.php on line 100.
+ 1 APPPATH\Views\mantenimiento\usuarios\crear.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/crear', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(119): view('mantenimiento/usuarios/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->crearUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:02:42 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 7.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:03:16 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 7.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:04:43 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 7.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 4 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:05:10 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 11.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:05:50 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 11.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:06:48 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 11.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:06:50 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 11.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:07:05 --> Undefined variable $nombres
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombres', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:07:59 --> Undefined property: stdClass::$apellidoPaterno
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 24.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$apellidoPaterno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:08:16 --> Undefined variable $sexo
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 46.
+ 1 APPPATH\Views\mantenimiento\usuarios\editar.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sexo', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php', 46)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-12 23:08:44 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\usuarios\editar.php on line 78.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/editar', [], true)
+ 4 APPPATH\Controllers\UsuarioController.php(190): view('mantenimiento/usuarios/editar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->editarUsuario('13')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

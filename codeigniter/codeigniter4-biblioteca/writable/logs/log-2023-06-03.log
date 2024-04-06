@@ -1,0 +1,29 @@
+ERROR - 2023-06-03 00:14:47 --> mysqli_sql_exception: Unknown column 'descripcion' in 'field list' in C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-andres\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-andres\app\Controllers\Curso.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(934): App\Controllers\Curso->create()
+#9 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+#10 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-andres\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-03 00:14:47 --> Unknown column 'descripcion' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`) VALUES (\'Aritmetica\', \'            dsadsad\\r\\n        \', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`) VALUES (\'Aritmetica\', \'            dsadsad\\r\\n        \', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`) VALUES (\'Aritmetica\', \'            dsadsad\\r\\n        \', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`nombre`, `descripcion`, `categoria`) VALUES (:nombre:, :descripcion:, :categoria:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Curso.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Curso->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Curso))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

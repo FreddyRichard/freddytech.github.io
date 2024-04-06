@@ -1,0 +1,1429 @@
+ERROR - 2023-07-09 02:55:05 --> mysqli_sql_exception: Table 'prueba.usuarios' doesn't exist in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 02:55:05 --> Table 'prueba.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `docente`
+JOIN `usuarios` ON `docentes`.`usuario_id` = `usuarios`.`dni`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `docente`
+JOIN `usuarios` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `docente`
+JOIN `usuarios` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `docente`
+JOIN `usuarios` ON `docentes`.`usuario_id` = `usuarios`.`dni`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 02:55:51 --> mysqli_sql_exception: Unknown column 'docentes.usuario_id' in 'on clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 02:55:51 --> Unknown column 'docentes.usuario_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 02:56:17 --> mysqli_sql_exception: Unknown column 'docentes.usuario_id' in 'on clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 02:56:17 --> Unknown column 'docentes.usuario_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 05:00:18 --> mysqli_sql_exception: Unknown column 'docentes.usuario_id' in 'on clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 05:00:18 --> Unknown column 'docentes.usuario_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 05:00:19 --> mysqli_sql_exception: Unknown column 'docentes.usuario_id' in 'on clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 05:00:19 --> Unknown column 'docentes.usuario_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `docente`
+JOIN `usuario` ON `docentes`.`usuario_id` = `usuarios`.`dni`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 05:14:57 --> Undefined variable $docentes
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 20.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docentes', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 20)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(50): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 05:26:00 --> mysqli_sql_exception: Unknown column 'usuarios.dni' in 'field list' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 05:26:00 --> Unknown column 'usuarios.dni' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuarios`.`dni`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuarios`.`id`
+WHERE `usuarios`.`rol` = \'Docente\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuarios`.`dni`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuarios`.`id`
+WHERE `usuarios`.`rol` = \'Docente\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuarios`.`dni`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuarios`.`id`
+WHERE `usuarios`.`rol` = \'Docente\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuarios`.`dni`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuarios`.`id`
+WHERE `usuarios`.`rol` = :usuarios.rol:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 05:26:24 --> mysqli_sql_exception: Unknown column 'usuarios.rol' in 'where clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 05:26:24 --> Unknown column 'usuarios.rol' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuarios`.`id`
+WHERE `usuarios`.`rol` = \'Docente\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuarios`.`id`
+WHERE `usuarios`.`rol` = \'Docente\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuarios`.`id`
+WHERE `usuarios`.`rol` = \'Docente\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuarios`.`id`
+WHERE `usuarios`.`rol` = :usuarios.rol:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 05:27:36 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(41): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 05:29:34 --> Undefined variable $isRolAlumno
+in APPPATH\Views\template\header.php on line 73.
+ 1 APPPATH\Views\template\header.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolAlumno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 73)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(45): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 05:31:30 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 22.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(55): view('mantenimiento/docentes/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 05:31:35 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 22.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(55): view('mantenimiento/docentes/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 05:32:07 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 23.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(55): view('mantenimiento/docentes/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 05:32:32 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(55): view('mantenimiento/docentes/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 06:12:54 --> mysqli_sql_exception: Unknown column 'docente.curso' in 'field list' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 06:12:54 --> Unknown column 'docente.curso' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(50): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 06:14:03 --> mysqli_sql_exception: Unknown column 'usuario.dni' in 'field list' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(52): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 06:14:03 --> Unknown column 'usuario.dni' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `curso`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `curso`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `curso`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `curso`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(52): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 06:15:38 --> mysqli_sql_exception: Unknown column 'docente.curso' in 'field list' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(51): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 06:15:38 --> Unknown column 'docente.curso' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `docente`.`curso`, `docente`.`aula`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(51): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:24:38 --> Attempt to read property "nombre" on string
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on string', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:26:04 --> Undefined array key 11
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 11', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:27:30 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:27:58 --> Attempt to read property "11" on array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "11" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:28:08 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:28:47 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:36:54 --> Attempt to read property "11" on array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "11" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:39:25 --> Undefined array key 11
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 11', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:41:40 --> Undefined array key 11
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 11', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:41:42 --> Undefined array key 11
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 11', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:43:30 --> Undefined array key 11
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 11', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:43:32 --> Undefined array key 11
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 11', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 06:46:19 --> Undefined array key 11
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 27.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 11', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(60): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 07:19:02 --> Undefined property: stdClass::$nombre
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 30.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(66): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 07:20:02 --> Undefined property: stdClass::$nivel
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 30.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nivel', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(66): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 07:22:04 --> mysqli_sql_exception: Unknown column 'usuario.id' in 'on clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `aula`.`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aula`.`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aula`.`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `aula`.`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-09 07:22:04 --> Unknown column 'usuario.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `aula`.`nombre`, `aula`.`seccion`, `aula`.`nivel`
+FROM `aula`
+JOIN `docente` ON `docente`.`aula_id` = `usuario`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aula`.`nombre`, `aula`.`seccion`, `aula`.`nivel`
+FROM `aula`
+JOIN `docente` ON `docente`.`aula_id` = `usuario`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aula`.`nombre`, `aula`.`seccion`, `aula`.`nivel`
+FROM `aula`
+JOIN `docente` ON `docente`.`aula_id` = `usuario`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `aula`.`nombre`, `aula`.`seccion`, `aula`.`nivel`
+FROM `aula`
+JOIN `docente` ON `docente`.`aula_id` = `usuario`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(63): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 07:22:17 --> Undefined array key 7
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 28.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(67): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 07:22:44 --> Undefined property: stdClass::$nivel
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 30.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nivel', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(67): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 07:23:18 --> Undefined array key 7
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 28.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(67): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 07:25:03 --> Undefined array key 7
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 28.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 7', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(67): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 07:26:45 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 33.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(65): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 07:27:21 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 33.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(65): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 07:28:21 --> Attempt to read property "nombre" on array
+in APPPATH\Views\mantenimiento\docentes\listar.php on line 34.
+ 1 APPPATH\Views\mantenimiento\docentes\listar.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombre" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/listar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(65): view('mantenimiento/docentes/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 17:40:45 --> Undefined variable $usuarios
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 18.
+ 1 APPPATH\Views\mantenimiento\docentes\crear.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(100): view('mantenimiento/docentes/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 17:45:16 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 19.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(107): view('mantenimiento/docentes/crear', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 17:45:22 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 19.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(107): view('mantenimiento/docentes/crear', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 17:45:25 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 19.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(107): view('mantenimiento/docentes/crear', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 17:45:55 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 20.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(107): view('mantenimiento/docentes/crear', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 17:46:22 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 20.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(107): view('mantenimiento/docentes/crear', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 18:04:40 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 32.
+ 1 APPPATH\Views\mantenimiento\docentes\crear.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(107): view('mantenimiento/docentes/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 18:05:28 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 33.
+ 1 APPPATH\Views\mantenimiento\docentes\crear.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(115): view('mantenimiento/docentes/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:09:57 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(129): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:09:57 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(129): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:14:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(129): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:14:58 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(129): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:16:13 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(129): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:16:13 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(129): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:18:29 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(129): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:18:29 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(129): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:31:37 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:31:37 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:39:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:39:24 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:39:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:39:50 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:46:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:46:09 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:46:20 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:46:20 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:47:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:47:44 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`) VALUES (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`) VALUES (:usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-09 18:52:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`)) in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-09 18:52:23 --> Cannot add or update a child row: a foreign key constraint fails (`prueba`.`docente`, CONSTRAINT `FK_DOCENTE_AULA` FOREIGN KEY (`aula_id`) REFERENCES `aula` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `docente` (`usuario_id`, `curso_id`, `aula_id`) VALUES (\'15\', \'2\', \'< ?= $aula[\\\'id\\\'] ?>\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `docente` (`usuario_id`, `curso_id`, `aula_id`) VALUES (\'15\', \'2\', \'< ?= $aula[\\\'id\\\'] ?>\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `docente` (`usuario_id`, `curso_id`, `aula_id`) VALUES (\'15\', \'2\', \'< ?= $aula[\\\'id\\\'] ?>\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `docente` (`usuario_id`, `curso_id`, `aula_id`) VALUES (:usuario_id:, :curso_id:, :aula_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DocenteController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->guardarDocente()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 18:54:15 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 44.
+ 1 APPPATH\Views\mantenimiento\docentes\crear.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(115): view('mantenimiento/docentes/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 18:54:16 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\crear.php on line 44.
+ 1 APPPATH\Views\mantenimiento\docentes\crear.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/crear', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(115): view('mantenimiento/docentes/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->crearDocente()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 19:32:12 --> Undefined array key "dni"
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 11.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dni"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(169): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 19:53:11 --> Undefined array key "dni"
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 11.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dni"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(169): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 19:59:48 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 17.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(169): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:00:26 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 17.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(184): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:00:41 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 7.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(184): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:02:56 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 17.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(173): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:04:23 --> Attempt to read property "curso_id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "curso_id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(176): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:06:56 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(176): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:09:21 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(176): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:10:35 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(176): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:10:49 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(176): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:12:35 --> Call to a member function toObject() on array
+in APPPATH\Controllers\DocenteController.php on line 167.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:13:36 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(175): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:14:07 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(175): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:14:08 --> Attempt to read property "id" on array
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(175): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 20:56:23 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\DocenteController.php(201): CodeIgniter\Model->update('2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->actualizarDocente()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 21:29:50 --> Undefined variable $usuarios
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 17.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(180): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('15')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 21:29:51 --> Undefined variable $usuarios
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 17.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(180): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('15')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 21:30:45 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 7.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(184): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('15')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 22:00:46 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AulaController.php(44): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AulaController->listarAulas()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AulaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 22:01:27 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AulaController.php(44): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AulaController->listarAulas()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AulaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 22:05:25 --> Undefined variable $isRolDocente
+in APPPATH\Views\template\header.php on line 64.
+ 1 APPPATH\Views\template\header.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isRolDocente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(78): view('template/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 23:29:00 --> Undefined array key "dni"
+in APPPATH\Views\mantenimiento\alumnos\listar.php on line 38.
+ 1 APPPATH\Views\mantenimiento\alumnos\listar.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dni"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\listar.php', 38)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('\\mantenimiento/alumnos/listar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(83): view('\\mantenimiento/alumnos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 23:45:11 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\alumnos\listar.php on line 37.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('\\mantenimiento/alumnos/listar', [], true)
+ 4 APPPATH\Controllers\AlumnoController.php(96): view('\\mantenimiento/alumnos/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 23:46:09 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\alumnos\listar.php on line 37.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('\\mantenimiento/alumnos/listar', [], true)
+ 4 APPPATH\Controllers\AlumnoController.php(96): view('\\mantenimiento/alumnos/listar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 23:48:32 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\alumnos\listar.php on line 39.
+ 1 APPPATH\Views\mantenimiento\alumnos\listar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\listar.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('\\mantenimiento/alumnos/listar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(96): view('\\mantenimiento/alumnos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-09 23:48:45 --> Undefined property: stdClass::$apellidomaterno
+in APPPATH\Views\mantenimiento\alumnos\listar.php on line 41.
+ 1 APPPATH\Views\mantenimiento\alumnos\listar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$apellidomaterno', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\listar.php', 41)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\alumnos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('\\mantenimiento/alumnos/listar', [], true)
+ 5 APPPATH\Controllers\AlumnoController.php(96): view('\\mantenimiento/alumnos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

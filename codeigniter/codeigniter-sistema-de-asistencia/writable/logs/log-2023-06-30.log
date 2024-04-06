@@ -1,0 +1,32 @@
+CRITICAL - 2023-06-30 23:12:02 --> Undefined variable $loggedIn
+in APPPATH\Views\template\header.php on line 39.
+ 1 APPPATH\Views\template\header.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedIn', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(34): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAlumnos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-30 23:45:23 --> in_array(): Argument #2 ($haystack) must be of type array, null given
+in APPPATH\Controllers\OficinaController.php on line 29.
+ 1 APPPATH\Controllers\OficinaController.php(29): in_array('Oficina', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAlumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-30 23:46:44 --> in_array(): Argument #2 ($haystack) must be of type array, null given
+in APPPATH\Controllers\OficinaController.php on line 29.
+ 1 APPPATH\Controllers\OficinaController.php(29): in_array('Oficina', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAlumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-30 23:47:04 --> in_array(): Argument #2 ($haystack) must be of type array, null given
+in APPPATH\Controllers\OficinaController.php on line 29.
+ 1 APPPATH\Controllers\OficinaController.php(29): in_array('Oficina', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAlumnos()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

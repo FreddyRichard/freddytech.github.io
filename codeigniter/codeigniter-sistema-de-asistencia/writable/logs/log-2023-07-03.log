@@ -1,0 +1,218 @@
+ERROR - 2023-07-03 00:16:30 --> mysqli_sql_exception: Unknown column 'dni' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\OficinaController.php(228): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\OficinaController->listarAulas()
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-03 00:16:30 --> Unknown column 'dni' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `aula`
+ORDER BY `dni` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `aula`
+ORDER BY `dni` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `aula`
+ORDER BY `dni` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aula`
+ORDER BY `dni` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\OficinaController.php(228): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAulas()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 00:16:58 --> Undefined variable $header
+in APPPATH\Views\oficina\aulas\listar.php on line 1.
+ 1 APPPATH\Views\oficina\aulas\listar.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\listar.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/aulas/listar', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(231): view('oficina/aulas/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAulas()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 00:20:36 --> Undefined variable $cursos
+in APPPATH\Views\oficina\aulas\listar.php on line 22.
+ 1 APPPATH\Views\oficina\aulas\listar.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\listar.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/aulas/listar', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(231): view('oficina/aulas/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAulas()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 02:51:55 --> Undefined variable $loggedIn
+in APPPATH\Views\template\header.php on line 31.
+ 1 APPPATH\Views\template\header.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedIn', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(241): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->crearAula()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 02:53:59 --> Undefined variable $loggedIn
+in APPPATH\Views\template\header.php on line 31.
+ 1 APPPATH\Views\template\header.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedIn', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(261): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->crearAula()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 02:54:38 --> Undefined variable $loggedIn
+in APPPATH\Views\template\header.php on line 31.
+ 1 APPPATH\Views\template\header.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedIn', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(261): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->crearAula()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 02:54:39 --> Undefined variable $loggedIn
+in APPPATH\Views\template\header.php on line 31.
+ 1 APPPATH\Views\template\header.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedIn', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(261): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->crearAula()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 02:57:25 --> Undefined variable $loggedIn
+in APPPATH\Views\template\header.php on line 31.
+ 1 APPPATH\Views\template\header.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedIn', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php', 31)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(237): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->crearAula()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 02:58:06 --> Undefined variable $header
+in APPPATH\Views\oficina\aulas\crear.php on line 1.
+ 1 APPPATH\Views\oficina\aulas\crear.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\crear.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/aulas/crear', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(259): view('oficina/aulas/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->crearAula()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 02:58:17 --> Undefined variable $header
+in APPPATH\Views\oficina\aulas\crear.php on line 1.
+ 1 APPPATH\Views\oficina\aulas\crear.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\crear.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/aulas/crear', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(259): view('oficina/aulas/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->crearAula()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 02:58:39 --> Undefined variable $footer
+in APPPATH\Views\oficina\aulas\crear.php on line 41.
+ 1 APPPATH\Views\oficina\aulas\crear.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $footer', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\crear.php', 41)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/aulas/crear', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(259): view('oficina/aulas/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->crearAula()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-03 03:15:41 --> mysqli_sql_exception: Unknown column 'grado' in 'field list' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-login\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-login\app\Controllers\OficinaController.php(285): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\OficinaController->guardarAula()
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+#10 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-03 03:15:41 --> Unknown column 'grado' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `aula` (`grado`, `seccion`, `nivel`) VALUES (\'Primero\', \'A\', \'Primaria\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `aula` (`grado`, `seccion`, `nivel`) VALUES (\'Primero\', \'A\', \'Primaria\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `aula` (`grado`, `seccion`, `nivel`) VALUES (\'Primero\', \'A\', \'Primaria\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aula` (`grado`, `seccion`, `nivel`) VALUES (:grado:, :seccion:, :nivel:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OficinaController.php(285): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->guardarAula()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 03:16:58 --> Undefined array key "grado"
+in APPPATH\Views\oficina\aulas\listar.php on line 26.
+ 1 APPPATH\Views\oficina\aulas\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "grado"', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\listar.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/aulas/listar', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(231): view('oficina/aulas/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->listarAulas()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 05:20:33 --> Undefined variable $header
+in APPPATH\Views\oficina\aulas\editar.php on line 1.
+ 1 APPPATH\Views\oficina\aulas\editar.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\editar.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/aulas/editar', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(316): view('oficina/aulas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->editarAula('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 05:28:16 --> Undefined variable $curso
+in APPPATH\Views\oficina\aulas\editar.php on line 7.
+ 1 APPPATH\Views\oficina\aulas\editar.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $curso', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\editar.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\aulas\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/aulas/editar', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(316): view('oficina/aulas/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->editarAula('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 20:54:55 --> Undefined variable $header
+in APPPATH\Views\oficina\alumnos\crear.php on line 1.
+ 1 APPPATH\Views\oficina\alumnos\crear.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\alumnos\\crear.php', 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\oficina\\alumnos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('oficina/alumnos/crear', [], true)
+ 5 APPPATH\Controllers\OficinaController.php(75): view('oficina/alumnos/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\OficinaController->crearAlumno()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OficinaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

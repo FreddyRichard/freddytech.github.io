@@ -1,0 +1,312 @@
+CRITICAL - 2023-06-05 01:29:56 --> Undefined variable $cabecera
+in APPPATH\Views\cursos\crear.php on line 1.
+ 1 APPPATH\Views\cursos\crear.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\crear.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/crear', [], true)
+ 5 APPPATH\Controllers\CursoController.php(28): view('cursos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 03:51:52 --> Undefined variable $aliasImagen
+in APPPATH\Controllers\CursoController.php on line 44.
+ 1 APPPATH\Controllers\CursoController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aliasImagen', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 04:11:29 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-andres\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-andres\app\Controllers\CursoController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+#9 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+#10 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-andres\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-05 04:11:29 --> Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'Biologias\', NULL, \'Ciencia\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'Biologias\', NULL, \'Ciencia\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'Biologias\', NULL, \'Ciencia\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (:nombre:, :description:, :categoria:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CursoController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 04:11:51 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-andres\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-andres\app\Controllers\CursoController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+#9 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+#10 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-andres\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-05 04:11:51 --> Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'Biologias\', NULL, \'Ciencia\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'Biologias\', NULL, \'Ciencia\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'Biologias\', NULL, \'Ciencia\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (:nombre:, :description:, :categoria:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CursoController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 04:27:11 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-andres\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-andres\app\Controllers\CursoController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+#9 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+#10 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-andres\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-05 04:27:11 --> Column 'imagen' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'Algebra\', NULL, \'Ciencia\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'Algebra\', NULL, \'Ciencia\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'Algebra\', NULL, \'Ciencia\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (:nombre:, :description:, :categoria:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CursoController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 05:07:16 --> Call to a member function isValid() on null
+in APPPATH\Controllers\CursoController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 05:25:14 --> Object of class App\Controllers\CursoController could not be converted to string
+in APPPATH\Controllers\CursoController.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-05 05:31:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '))' at line 1 in C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-andres\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\codeigniter4-andres\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter4-andres\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter4-andres\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter4-andres\app\Controllers\CursoController.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+#9 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+#10 C:\xampp\htdocs\codeigniter4-andres\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter4-andres\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-06-05 05:31:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '))' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'sda\', \'dsadsa\', \'Ciencia\', ())', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'sda\', \'dsadsa\', \'Ciencia\', ())')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (\'sda\', \'dsadsa\', \'Ciencia\', ())')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`nombre`, `description`, `categoria`, `imagen`) VALUES (:nombre:, :description:, :categoria:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CursoController.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 05:36:06 --> Attempt to read property "" on string
+in APPPATH\Controllers\CursoController.php on line 40.
+ 1 APPPATH\Controllers\CursoController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "" on string', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 06:02:53 --> Invalid file: "listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('listar', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('listar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 06:21:52 --> Invalid file: "listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('listar', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('listar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 06:22:13 --> Invalid file: "listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('listar', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('listar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 06:23:01 --> Undefined variable $header
+in APPPATH\Views\cursos\listar.php on line 3.
+ 1 APPPATH\Views\cursos\listar.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('cursos/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 06:23:02 --> Undefined variable $header
+in APPPATH\Views\cursos\listar.php on line 3.
+ 1 APPPATH\Views\cursos\listar.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('cursos/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 06:23:49 --> Undefined variable $cursos
+in APPPATH\Views\cursos\listar.php on line 23.
+ 1 APPPATH\Views\cursos\listar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('cursos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 06:23:50 --> Undefined variable $cursos
+in APPPATH\Views\cursos\listar.php on line 23.
+ 1 APPPATH\Views\cursos\listar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('cursos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:37:09 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 59.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 59)
+ 2 APPPATH\Controllers\CursoController.php(59): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->borrar('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 21:41:56 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(39): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686001316_94119f4a247344af50b9')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 23:39:52 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(40): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686008392_f6a8718a70098cfe18c0')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 23:43:57 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(40): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686008637_4418b80b14ab4fbd754e')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 23:47:12 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(40): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686008832_368329f5b985353e299a')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 23:48:43 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(40): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686008923_46f402e566d04a3fc965')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 23:50:57 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(40): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686009057_def9396f0afbe2fd3652')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 23:50:59 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(40): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686009059_f343d0e088f674e07323')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 23:51:13 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(40): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686009073_30cfad2222180b27e8d7')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 23:53:08 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(40): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686009188_d99d4eaa7d715f9a5ea3')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-05 23:53:16 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CursoController.php(40): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1686009196_3f26818e61ebf9117269')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

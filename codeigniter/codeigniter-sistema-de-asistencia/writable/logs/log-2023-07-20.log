@@ -1,0 +1,27 @@
+CRITICAL - 2023-07-20 00:05:28 --> Unclosed '[' on line 288 does not match '}'
+in APPPATH\Controllers\DocenteController.php on line 297.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\DocenteController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DocenteController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DocenteController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\DocenteController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-20 03:47:59 --> Call to undefined method App\Models\DocenteModel::with
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\DocenteController.php(196): CodeIgniter\Model->__call('with', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-20 03:50:52 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\docentes\editar.php on line 8.
+ 1 APPPATH\Views\mantenimiento\docentes\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\docentes\\editar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/docentes/editar', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(249): view('mantenimiento/docentes/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('56')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

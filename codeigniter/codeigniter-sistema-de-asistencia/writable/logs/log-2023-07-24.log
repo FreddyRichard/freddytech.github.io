@@ -1,0 +1,10 @@
+CRITICAL - 2023-07-24 21:46:18 --> Unsupported operand types: string - string
+in APPPATH\Views\mantenimiento\alumnos\crear.php on line 91.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('\\mantenimiento/alumnos/crear', [], true)
+ 4 APPPATH\Controllers\AlumnoController.php(154): view('\\mantenimiento/alumnos/crear', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->crearAlumno()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

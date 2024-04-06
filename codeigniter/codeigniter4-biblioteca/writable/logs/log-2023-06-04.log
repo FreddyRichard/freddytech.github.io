@@ -1,0 +1,60 @@
+CRITICAL - 2023-06-04 03:13:24 --> Invalid file: "cursos/listars.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/listars.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listars', [], true)
+ 3 APPPATH\Controllers\CursoController.php(14): view('cursos/listars')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 03:14:04 --> Invalid file: "cursos/listars.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/listars.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listars', [], true)
+ 3 APPPATH\Controllers\CursoController.php(14): view('cursos/listars')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:00:12 --> Invalid file: "cursos/listars.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/listars.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listars', [], true)
+ 3 APPPATH\Controllers\CursoController.php(16): view('cursos/listars', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:16:33 --> Undefined array key "id"
+in APPPATH\Views\cursos\listar.php on line 30.
+ 1 APPPATH\Views\cursos\listar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(16): view('cursos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:23:53 --> Undefined array key "descripcion"
+in APPPATH\Views\cursos\listar.php on line 32.
+ 1 APPPATH\Views\cursos\listar.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "descripcion"', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(16): view('cursos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-04 18:42:21 --> Undefined array key "descripcion"
+in APPPATH\Views\cursos\listar.php on line 32.
+ 1 APPPATH\Views\cursos\listar.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "descripcion"', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(16): view('cursos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

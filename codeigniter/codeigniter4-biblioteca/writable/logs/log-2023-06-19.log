@@ -1,0 +1,44 @@
+CRITICAL - 2023-06-19 22:42:43 --> Undefined array key "description"
+in APPPATH\Views\cursos\listar.php on line 28.
+ 1 APPPATH\Views\cursos\listar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'C:\\xampp\\htdocs\\codeigniter4-biblioteca\\app\\Views\\cursos\\listar.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-biblioteca\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(20): view('cursos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 23:24:13 --> Undefined array key "description"
+in APPPATH\Views\cursos\listar.php on line 28.
+ 1 APPPATH\Views\cursos\listar.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'C:\\xampp\\htdocs\\codeigniter4-biblioteca\\app\\Views\\cursos\\listar.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-biblioteca\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(20): view('cursos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 23:24:35 --> Undefined array key "imagen"
+in APPPATH\Views\cursos\listar.php on line 31.
+ 1 APPPATH\Views\cursos\listar.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'C:\\xampp\\htdocs\\codeigniter4-biblioteca\\app\\Views\\cursos\\listar.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-biblioteca\\app\\Views\\cursos\\listar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/listar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(20): view('cursos/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 23:31:15 --> Undefined array key "description"
+in APPPATH\Views\cursos\editar.php on line 17.
+ 1 APPPATH\Views\cursos\editar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'C:\\xampp\\htdocs\\codeigniter4-biblioteca\\app\\Views\\cursos\\editar.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-biblioteca\\app\\Views\\cursos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/editar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(112): view('cursos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

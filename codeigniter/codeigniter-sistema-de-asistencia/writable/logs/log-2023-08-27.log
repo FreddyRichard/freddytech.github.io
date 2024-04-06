@@ -1,0 +1,512 @@
+CRITICAL - 2023-08-27 04:21:35 --> Invalid file: "mantenimiento/cursos/asignar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mantenimiento/cursos/asignar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/asignar', [], true)
+ 3 APPPATH\Controllers\CursoController.php(229): view('mantenimiento/cursos/asignar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->asignarCurso()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 04:25:31 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\cursos\asignar.php on line 94.
+ 1 APPPATH\Views\mantenimiento\cursos\asignar.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/asignar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(229): view('mantenimiento/cursos/asignar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->asignarCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 04:27:06 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\cursos\asignar.php on line 57.
+ 1 APPPATH\Views\mantenimiento\cursos\asignar.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/asignar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(229): view('mantenimiento/cursos/asignar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->asignarCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 04:39:53 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\cursos\asignar.php on line 57.
+ 1 APPPATH\Views\mantenimiento\cursos\asignar.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/asignar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(229): view('mantenimiento/cursos/asignar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->asignarCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 04:42:02 --> Undefined variable $filtroActivo
+in APPPATH\Views\mantenimiento\cursos\asignar.php on line 14.
+ 1 APPPATH\Views\mantenimiento\cursos\asignar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filtroActivo', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/asignar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(229): view('mantenimiento/cursos/asignar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->asignarCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 04:42:37 --> Undefined variable $filtroActivo
+in APPPATH\Views\mantenimiento\cursos\asignar.php on line 11.
+ 1 APPPATH\Views\mantenimiento\cursos\asignar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filtroActivo', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/asignar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(229): view('mantenimiento/cursos/asignar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->asignarCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 04:44:05 --> Undefined variable $docentes
+in APPPATH\Views\mantenimiento\cursos\asignar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\cursos\asignar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docentes', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/asignar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(229): view('mantenimiento/cursos/asignar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->asignarCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 04:48:03 --> Undefined variable $docentes
+in APPPATH\Views\mantenimiento\cursos\asignar.php on line 18.
+ 1 APPPATH\Views\mantenimiento\cursos\asignar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docentes', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\asignar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/asignar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(242): view('mantenimiento/cursos/asignar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->asignarCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 04:57:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\DocenteController.php on line 279.
+ 1 APPPATH\Controllers\DocenteController.php(279): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Controllers\\DocenteController.php', 279)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->editarDocente('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:08:53 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(280): view('mantenimiento/cursos/crearAsignacion')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:11:11 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(284): view('mantenimiento/cursos/crearAsignacion')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:11:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(284): view('mantenimiento/cursos/crearAsignacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:12:30 --> Trying to access array offset on value of type null
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(284): view('mantenimiento/cursos/crearAsignacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:12:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(284): view('mantenimiento/cursos/crearAsignacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:20:02 --> Undefined variable $docenteData
+in APPPATH\Controllers\CursoController.php on line 306.
+ 1 APPPATH\Controllers\CursoController.php(306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docenteData', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Controllers\\CursoController.php', 306)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:20:36 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\xampp\htdocs\codeigniter-sistema-de-asistencia\app\Controllers\CursoController.php on line 306
+in SYSTEMPATH\Common.php on line 1168.
+ 1 APPPATH\Controllers\CursoController.php(306): view('mantenimiento/cursos/crearAsignacion', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:20:39 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\xampp\htdocs\codeigniter-sistema-de-asistencia\app\Controllers\CursoController.php on line 306
+in SYSTEMPATH\Common.php on line 1168.
+ 1 APPPATH\Controllers\CursoController.php(306): view('mantenimiento/cursos/crearAsignacion', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:22:46 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 14.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(306): view('mantenimiento/cursos/crearAsignacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:25:07 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(285): view('mantenimiento/cursos/crearAsignacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:25:10 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(285): view('mantenimiento/cursos/crearAsignacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:26:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(289): view('mantenimiento/cursos/crearAsignacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:29:48 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(290): view('mantenimiento/cursos/crearAsignacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:30:06 --> Undefined variable $docente
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docente', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(290): view('mantenimiento/cursos/crearAsignacion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:36:28 --> Cannot use object of type stdClass as array
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 8.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 4 APPPATH\Controllers\CursoController.php(289): view('mantenimiento/cursos/crearAsignacion')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:37:07 --> Undefined variable $dni
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 14.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dni', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(289): view('mantenimiento/cursos/crearAsignacion')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 05:37:33 --> Undefined variable $nombres
+in APPPATH\Views\mantenimiento\cursos\crearAsignacion.php on line 25.
+ 1 APPPATH\Views\mantenimiento\cursos\crearAsignacion.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombres', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\cursos\\crearAsignacion.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/cursos/crearAsignacion', [], true)
+ 5 APPPATH\Controllers\CursoController.php(289): view('mantenimiento/cursos/crearAsignacion')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\CursoController->crearAsignacionCurso('32')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 19:10:25 --> Undefined variable $docentes
+in APPPATH\Views\docentes\cursos.php on line 17.
+ 1 APPPATH\Views\docentes\cursos.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $docentes', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('docentes/cursos', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(440): view('docentes/cursos')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 19:22:53 --> Attempt to read property "id" on array
+in APPPATH\Views\docentes\cursos.php on line 19.
+ 1 APPPATH\Views\docentes\cursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('docentes/cursos', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(444): view('docentes/cursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 19:23:21 --> Attempt to read property "dni" on array
+in APPPATH\Views\docentes\cursos.php on line 20.
+ 1 APPPATH\Views\docentes\cursos.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "dni" on array', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php', 20)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('docentes/cursos', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(444): view('docentes/cursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 19:24:09 --> Attempt to read property "id" on array
+in APPPATH\Views\docentes\cursos.php on line 23.
+ 1 APPPATH\Views\docentes\cursos.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('docentes/cursos', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(444): view('docentes/cursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 19:32:02 --> Attempt to read property "curso_id" on array
+in APPPATH\Views\docentes\cursos.php on line 22.
+ 1 APPPATH\Views\docentes\cursos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "curso_id" on array', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('docentes/cursos', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(444): view('docentes/cursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 19:32:33 --> Attempt to read property "curso_id" on array
+in APPPATH\Views\docentes\cursos.php on line 22.
+ 1 APPPATH\Views\docentes\cursos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "curso_id" on array', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('docentes/cursos', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(444): view('docentes/cursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 19:45:56 --> Undefined variable $cursos
+in APPPATH\Views\docentes\cursos.php on line 25.
+ 1 APPPATH\Views\docentes\cursos.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('docentes/cursos', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(444): view('docentes/cursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 19:55:03 --> Attempt to read property "aula_id" on array
+in APPPATH\Views\docentes\cursos.php on line 40.
+ 1 APPPATH\Views\docentes\cursos.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "aula_id" on array', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\docentes\\cursos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('docentes/cursos', [], true)
+ 5 APPPATH\Controllers\DocenteController.php(452): view('docentes/cursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 19:55:50 --> Undefined constant "aula_id"
+in APPPATH\Views\docentes\cursos.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('docentes/cursos', [], true)
+ 4 APPPATH\Controllers\DocenteController.php(452): view('docentes/cursos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->cursos()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 21:50:23 --> Undefined variable $cursos
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 21.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cursos', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(56): view('mantenimiento/asistencias/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:12:52 --> Undefined variable $asistencias
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 19.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asistencias', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(56): view('mantenimiento/asistencias/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:14:44 --> Class "App\Models\AsistenciaModel" not found
+in APPPATH\Controllers\AsistenciaController.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-27 22:16:49 --> mysqli_sql_exception: Table 'prueba.asistencia' doesn't exist in C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\app\Controllers\AsistenciaController.php(54): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+#8 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+#9 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter-sistema-de-asistencia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-27 22:16:49 --> Table 'prueba.asistencia' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `asistencia`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `asistencia`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `asistencia`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `asistencia`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AsistenciaController.php(54): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:22:28 --> Undefined variable $asistencias
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 19.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asistencias', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(58): view('mantenimiento/asistencias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:22:57 --> Undefined variable $asistencias
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 19.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asistencias', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(58): view('mantenimiento/asistencias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:22:59 --> Undefined variable $asistencias
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 19.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asistencias', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(58): view('mantenimiento/asistencias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:23:26 --> Undefined variable $asistencias
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 19.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asistencias', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(58): view('mantenimiento/asistencias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:23:47 --> Undefined variable $asistencias
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 19.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asistencias', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(58): view('mantenimiento/asistencias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:23:50 --> Undefined variable $asistencias
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 19.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asistencias', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(58): view('mantenimiento/asistencias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:24:29 --> Undefined variable $asistencias
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 19.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asistencias', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(58): view('mantenimiento/asistencias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-27 22:24:36 --> Undefined variable $asistencias
+in APPPATH\Views\mantenimiento\asistencias\listar.php on line 19.
+ 1 APPPATH\Views\mantenimiento\asistencias\listar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asistencias', 'C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter-sistema-de-asistencia\\app\\Views\\mantenimiento\\asistencias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/asistencias/listar', [], true)
+ 5 APPPATH\Controllers\AsistenciaController.php(58): view('mantenimiento/asistencias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AsistenciaController->listarAsistencias()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenciaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,987 @@
+ERROR - 2023-07-21 03:57:46 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(91): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 03:57:46 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE :dni: ESCAPE \'!\'
+OR  `id` LIKE :id: ESCAPE \'!\'
+OR  `nombres` LIKE :nombres: ESCAPE \'!\'
+OR  `apellidopaterno` LIKE :apellidopaterno: ESCAPE \'!\'
+OR  `apellidomaterno` LIKE :apellidomaterno: ESCAPE \'!\'
+AND `usuario`.`rol` = :usuario.rol:
+ORDER BY `id` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AlumnoController.php(91): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 03:58:18 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(91): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 03:58:18 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE :dni: ESCAPE \'!\'
+OR  `id` LIKE :id: ESCAPE \'!\'
+OR  `nombres` LIKE :nombres: ESCAPE \'!\'
+OR  `apellidopaterno` LIKE :apellidopaterno: ESCAPE \'!\'
+OR  `apellidomaterno` LIKE :apellidomaterno: ESCAPE \'!\'
+AND `usuario`.`rol` = :usuario.rol:
+ORDER BY `id` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AlumnoController.php(91): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 03:58:47 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(91): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 03:58:47 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE :dni: ESCAPE \'!\'
+OR  `id` LIKE :id: ESCAPE \'!\'
+OR  `nombres` LIKE :nombres: ESCAPE \'!\'
+OR  `apellidopaterno` LIKE :apellidopaterno: ESCAPE \'!\'
+OR  `apellidomaterno` LIKE :apellidomaterno: ESCAPE \'!\'
+AND `usuario`.`rol` = :usuario.rol:
+ORDER BY `id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AlumnoController.php(91): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 03:59:01 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 03:59:01 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE :dni: ESCAPE \'!\'
+OR  `id` LIKE :id: ESCAPE \'!\'
+OR  `nombres` LIKE :nombres: ESCAPE \'!\'
+OR  `apellidopaterno` LIKE :apellidopaterno: ESCAPE \'!\'
+OR  `apellidomaterno` LIKE :apellidomaterno: ESCAPE \'!\'
+AND `usuario`.`rol` = :usuario.rol:
+ORDER BY `alumno`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 03:59:05 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 03:59:05 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE :dni: ESCAPE \'!\'
+OR  `id` LIKE :id: ESCAPE \'!\'
+OR  `nombres` LIKE :nombres: ESCAPE \'!\'
+OR  `apellidopaterno` LIKE :apellidopaterno: ESCAPE \'!\'
+OR  `apellidomaterno` LIKE :apellidomaterno: ESCAPE \'!\'
+AND `usuario`.`rol` = :usuario.rol:
+ORDER BY `alumno`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 04:11:22 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 04:11:22 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE :dni: ESCAPE \'!\'
+OR  `id` LIKE :id: ESCAPE \'!\'
+OR  `nombres` LIKE :nombres: ESCAPE \'!\'
+OR  `apellidopaterno` LIKE :apellidopaterno: ESCAPE \'!\'
+OR  `apellidomaterno` LIKE :apellidomaterno: ESCAPE \'!\'
+AND `usuario`.`rol` = :usuario.rol:
+ORDER BY `alumno`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 04:11:38 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 04:11:38 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE :dni: ESCAPE \'!\'
+OR  `id` LIKE :id: ESCAPE \'!\'
+OR  `nombres` LIKE :nombres: ESCAPE \'!\'
+OR  `apellidopaterno` LIKE :apellidopaterno: ESCAPE \'!\'
+OR  `apellidomaterno` LIKE :apellidomaterno: ESCAPE \'!\'
+AND `usuario`.`rol` = :usuario.rol:
+ORDER BY `alumno`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 04:15:27 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 04:15:27 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE :dni: ESCAPE \'!\'
+OR  `id` LIKE :id: ESCAPE \'!\'
+OR  `nombres` LIKE :nombres: ESCAPE \'!\'
+OR  `apellidopaterno` LIKE :apellidopaterno: ESCAPE \'!\'
+OR  `apellidomaterno` LIKE :apellidomaterno: ESCAPE \'!\'
+AND `usuario`.`rol` = :usuario.rol:
+ORDER BY `alumno`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AlumnoController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 04:18:58 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\AlumnoController.php(91): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 04:18:58 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `id` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `nombres` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidopaterno` LIKE \'%desc%\' ESCAPE \'!\'
+OR  `apellidomaterno` LIKE \'%desc%\' ESCAPE \'!\'
+AND `usuario`.`rol` = \'Alumno\'
+ORDER BY `alumno`.`id` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alumno`.`id`, `alumno`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `alumno`.`aula_id`
+FROM `usuario`
+JOIN `alumno` ON `alumno`.`usuario_id` = `usuario`.`id`
+WHERE `dni` LIKE :dni: ESCAPE \'!\'
+OR  `id` LIKE :id: ESCAPE \'!\'
+OR  `nombres` LIKE :nombres: ESCAPE \'!\'
+OR  `apellidopaterno` LIKE :apellidopaterno: ESCAPE \'!\'
+OR  `apellidomaterno` LIKE :apellidomaterno: ESCAPE \'!\'
+AND `usuario`.`rol` = :usuario.rol:
+ORDER BY `alumno`.`id` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AlumnoController.php(91): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AlumnoController->listarAlumnos('id', 'desc')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AlumnoController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 04:41:18 --> mysqli_sql_exception: Unknown column 'curso' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 04:41:18 --> Unknown column 'curso' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:
+ORDER BY `curso` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 04:41:43 --> mysqli_sql_exception: Unknown column 'curso' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 04:41:43 --> Unknown column 'curso' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:
+ORDER BY `curso` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 04:41:48 --> mysqli_sql_exception: Unknown column 'curso' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 04:41:48 --> Unknown column 'curso' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:
+ORDER BY `curso` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 04:44:08 --> mysqli_sql_exception: Unknown column 'curso' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 04:44:08 --> Unknown column 'curso' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:
+ORDER BY `curso` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 04:45:38 --> mysqli_sql_exception: Unknown column 'docente.curso' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 04:45:38 --> Unknown column 'docente.curso' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `docente`.`curso` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `docente`.`curso` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `docente`.`curso` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:
+ORDER BY `docente`.`curso` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 05:02:08 --> mysqli_sql_exception: Unknown column 'curso.nombre' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 05:02:08 --> Unknown column 'curso.nombre' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:
+ORDER BY `curso`.`nombre` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(89): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 05:23:18 --> mysqli_sql_exception: Unknown column 'curso.nombre' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(99): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 05:23:18 --> Unknown column 'curso.nombre' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:
+ORDER BY `curso`.`nombre` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(99): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 05:24:36 --> mysqli_sql_exception: Unknown column 'curso.nombre' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(99): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 05:24:36 --> Unknown column 'curso.nombre' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:
+ORDER BY `curso`.`nombre` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(99): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-21 05:24:39 --> mysqli_sql_exception: Unknown column 'curso.nombre' in 'order clause' in C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-login\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente...', 0)
+#1 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente...')
+#2 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente...')
+#3 C:\xampp\htdocs\codeigniter4-login\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente...', Array, false)
+#4 C:\xampp\htdocs\codeigniter4-login\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter4-login\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter4-login\app\Controllers\DocenteController.php(99): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+#8 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+#9 C:\xampp\htdocs\codeigniter4-login\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-login\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-21 05:24:39 --> Unknown column 'curso.nombre' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = \'Docente\'
+ORDER BY `curso`.`nombre` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `docente`.`id`, `docente`.`usuario_id`, `usuario`.`dni`, `usuario`.`nombres`, `usuario`.`apellidopaterno`, `usuario`.`apellidomaterno`, `docente`.`curso_id`, `docente`.`aula_id`
+FROM `usuario`
+JOIN `docente` ON `docente`.`usuario_id` = `usuario`.`id`
+WHERE `usuario`.`rol` = :usuario.rol:
+ORDER BY `curso`.`nombre` ASC', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DocenteController.php(99): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\DocenteController->listarDocentes('curso')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocenteController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 23:50:23 --> Undefined variable $filtroActivo
+in APPPATH\Views\mantenimiento\usuarios\listar.php on line 13.
+ 1 APPPATH\Views\mantenimiento\usuarios\listar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filtroActivo', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/listar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(78): view('mantenimiento/usuarios/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 23:55:53 --> Undefined variable $filtroActivo
+in APPPATH\Views\mantenimiento\usuarios\listar.php on line 13.
+ 1 APPPATH\Views\mantenimiento\usuarios\listar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filtroActivo', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/listar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(79): view('mantenimiento/usuarios/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-21 23:55:54 --> Undefined variable $filtroActivo
+in APPPATH\Views\mantenimiento\usuarios\listar.php on line 13.
+ 1 APPPATH\Views\mantenimiento\usuarios\listar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filtroActivo', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter4-login\\app\\Views\\mantenimiento\\usuarios\\listar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('mantenimiento/usuarios/listar', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(79): view('mantenimiento/usuarios/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\UsuarioController->listarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

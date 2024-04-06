@@ -1,0 +1,21 @@
+CRITICAL - 2023-07-23 00:12:05 --> Attempt to read property "id" on null
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 APPPATH\Controllers\LoginController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\LoginController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-23 00:14:08 --> Attempt to read property "id" on null
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 APPPATH\Controllers\LoginController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\LoginController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-23 00:48:21 --> Attempt to read property "id" on null
+in APPPATH\Controllers\LoginController.php on line 38.
+ 1 APPPATH\Controllers\LoginController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\codeigniter4-login\\app\\Controllers\\LoginController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

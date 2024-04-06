@@ -1,0 +1,123 @@
+CRITICAL - 2023-06-06 01:12:16 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 69.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 69)
+ 2 APPPATH\Controllers\CursoController.php(69): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->borrar('20')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 03:16:23 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 69.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 69)
+ 2 APPPATH\Controllers\CursoController.php(69): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->borrar('7')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 04:52:05 --> Undefined variable $cabecera
+in APPPATH\Views\cursos\editar.php on line 1.
+ 1 APPPATH\Views\cursos\editar.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\editar.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Views\\cursos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('cursos/editar', [], true)
+ 5 APPPATH\Controllers\CursoController.php(88): view('cursos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:55:16 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 116)
+ 2 APPPATH\Controllers\CursoController.php(116): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 19:58:42 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 118.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 118)
+ 2 APPPATH\Controllers\CursoController.php(118): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 19:58:50 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 118.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 118)
+ 2 APPPATH\Controllers\CursoController.php(118): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 19:59:09 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 118.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 118)
+ 2 APPPATH\Controllers\CursoController.php(118): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 20:01:01 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 118.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 118)
+ 2 APPPATH\Controllers\CursoController.php(118): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 20:03:06 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 118.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 118)
+ 2 APPPATH\Controllers\CursoController.php(118): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 20:41:11 --> unlink(../public/uploads/): Is a directory
+in APPPATH\Controllers\CursoController.php on line 118.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/): Is a directory', 'C:\\xampp\\htdocs\\codeigniter4-andres\\app\\Controllers\\CursoController.php', 118)
+ 2 APPPATH\Controllers\CursoController.php(118): unlink('../public/uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 22:41:35 --> "required " is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Historia Universal', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\CursoController.php(44): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 22:42:59 --> "required " is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Hi', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\CursoController.php(44): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 22:49:02 --> "required " is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Hi', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\CursoController.php(44): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 22:50:40 --> "required " is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 329.
+ 1 SYSTEMPATH\Validation\Validation.php(329): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(179): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Hi', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\CursoController.php(44): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CursoController->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CursoController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
